@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+header {
+	height: 80px;
+	border: 3px solid black;
+}
+
+nav{
+	width: 250px;
+	border: 3px solid black;
+	margin: 10px 0 10px 0;
+	float: right;
+;
+}
+
+nav ul ol li {
+	display: inline-block;
+
+}
+
+nav ul ol a{
+	font-family: 'Lato', sans-serif;
+	font-size: 12pt;
+	text-decoration: none;
+	color: #000000;
+	margin: 0 10px 0 0;
+}
+
+article{
+	border: 3px solid black;
+}
+
+
+
+.introduction {
+	width: 50%;
+	height: 300px;
+	border: 3px solid black;
+	box-sizing: border-box;
+	float: left;
+}
+
+
+
+.introduction header{
+	width: 45%;
+	float: left;
+	box-sizing: border-box;
+	margin: 0 100px 0 100px;
+}
+
+
+
+.introduction header h1 {
+	font-family: 'Lato', sans-serif;
+	font-size: 20pt;
+}
+
+
+
+
+
+
+.expertise{
+	width:  20%;
+	float: right;
+	border: 3px solid black;
+	box-sizing: border-box;
+	padding: 20px 20px 20px 20px;
+	margin: 0 100px 0 100px;
+}
+
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-size: 12pt;
+
+}
+
+
+ul {
+	font-family: 'Lato', sans-serif;
+	font-size: 10pt;
+	color: #979797;
+
+}
+
+
+.collage {
+	width: 100%;
+	display: inline-block;
+	border: 3px solid black;
+	padding: 50px 50px 50px 50px;
+	box-sizing: border-box;
+}
+
+
+.contact {
+	padding: 50px 150px 50px 150px;
+	box-sizing: border-box;
+}
+
+
+.contact p {
+	font-family: 'Lato', sans-serif;
+	font-size: 20pt;
+	text-align: center;
+}
+
+
+.contact p a{
+	color: #76008b;
+}
+
+
+footer {
+	background-color: #292929;
+	margin-top: 50px;
+}
+
+
+footer p {
+	padding-bottom: 20px;
+}
+
+
+footer p a{
+	font-family: 'Lato', sans-serif;
+	color: #F0F0F0;
+	text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
