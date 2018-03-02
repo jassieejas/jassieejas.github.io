@@ -1,0 +1,63 @@
+body{
+	font-family: Arial, sans-serif;
+	background-color: #eeeeee;
+	margin: 0;
+}
+
+
+.gallery-item {
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	margin: 16px;
+	vertical-align: top;
+
+}
+
+
+.gallery-item img{
+	max-width:230px;
+}
+
+
+.gallery-item .caption{
+	display: none;
+}
+
+
+/*lightbox*/
+
+.lightbox {
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	padding-top: 50px;
+	color: white;
+}
+
+/*.lightbox img {
+	max-height: 60vh;
+
+}*/
+
+.lightbox a {
+	color: white;
+}
+
+.lightbox-close {
+	float: right;
+}
+
+.lightbox-content {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
