@@ -1,62 +1,136 @@
-body{
-	font-family: Arial, sans-serif;
-	background-color: #eeeeee;
+
+* {
+	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 
-.gallery-item {
-	display: inline-block;
-	background-color: white;
+h1 {
+	font-family:Verdana, Geneva, sans-serif;
 	text-align: center;
-	padding: 10px;
-	border: 1px solid #dddddd;
-	border-radius: 5px;
-	margin: 16px;
-	vertical-align: top;
+	margin: 100px auto;
+}
+
+
+.container {
+	margin: 30px;
+	padding: 5px;
+	border: 1px dotted grey;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 }
 
 
-.gallery-item img{
-	max-width:230px;
+.gallery {
+	text-align: center;
+	padding: 5px;
+	background-color: white;
+	margin: 5px;
+	list-style: none;
+	transition: 0.5s;
 }
 
 
-.gallery-item .caption{
+.gallery:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.gallery-item img {
+	max-width: 300px;
+
+}
+
+
+
+.gallery-item .caption {
 	display: none;
 }
 
 
-/*lightbox*/
+
+
+
+/*-------LIGHTBOX-------*/
+
 
 .lightbox {
-	position: fixed;
-	background-color: rgba(0,0,0,0.5);
 	width: 100%;
 	height: 100%;
-	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
 	top: 0;
-	padding-top: 50px;
-	color: white;
+	z-index: 1;
+	position: fixed;
+	box-sizing: border-box;
+	flex-wrap: wrap;
 }
 
-/*.lightbox img {
-	max-height: 60vh;
-
-}*/
 
 .lightbox a {
+	font-weight: bold;
+	font-size: 25pt;
+	text-decoration: none;
 	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px dotted white;
+	position: absolute;
+	transition: 0.5s;
 }
 
-.lightbox-close {
-	float: right;
+
+.lightbox a:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.lightbox-content {
-	display: inline-block;
+
+.lightbox .lightbox-content {
+	width: 70%;
+	position: fixed;
+	border: 1px solid white;
+	text-align: center;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, 50%);
 }
+
+
+.lightbox .lightbox-content img{
+	max-width: 100%;
+	text-align: center;
+}
+
+
+.lightbox .lightbox-content .caption {
+	color: white;
+	border: 1px solid grey;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	margin: 20px;
+}
+
+.lightbox .prev {
+
+	left: 0;
+	top: 50%;
+}
+
+
+.lightbox .next {
+
+	right: 0;
+	top: 50%;
+
+}
+
+.lightbox .lightbox-close {
+	top: 20px;
+	right: 20px;
+}
+
 
 .hidden {
 	display: none;
