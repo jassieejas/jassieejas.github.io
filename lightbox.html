@@ -1,62 +1,101 @@
-<!-- Skeleton HTML -->
-
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<link rel="stylesheet" href="lightbox.css"/>
-		<title>Image Gallery</title>
+<head>
+
+	<title>Image Gallery</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
 
 
-	</head>
+</head>
+<body>
 
-	<body>
+
+	<h1>Image Gallery</h1>
+
+	<!-- GALLERY HERE -->
+
+	<div class="container" data-masonry='{ "itemSelector": ".gallery", "columnWidth": 5 }'>
 		
-		<!-- GALLERY -->
-		<ul class="gallery">
-			<li class="gallery-item">
-				<img src="images/gallery/photo01.jpeg"/>
-				<p class="caption">Marina Bay Sands, Singapore</p></li>
-			<li class="gallery-item">
-				<img src="images/gallery/photo02.jpeg"/>
-				<p class="caption">Shanghai, China</p></li>
-			<li class="gallery-item">
-				<img src="images/gallery/photo03.jpeg"/>
-				<p class="caption">Los Angeles, United States</p></li>
-		</ul>
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/photo07.JPG"/>
+			<p class="caption">Osaka Castle, October 2017</p>
+		</li>
+	</ul>
 
 
-		<!-- LIGHTBOX -->
-		<div class="lightbox">
-			<div class="lightbox-content">
-				<div class="lightbox-controls">
-				<a href="#" class="lightbox-close">Close</a>
-				<a href="#" class="previous">Previous</a>
-				<a href="#" class="next">Next</a>
-			</div>
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/photo07.jpeg"/>
+			<p class="caption">Find beauty in the darkness. 2017</p>
+		</li>
+	</ul>
 
-				<div class="lightbox-image">
-					<img src="images/gallery/photo02.jpeg"/>
-					<p class="caption">Shanghai, China</p>
-				</div>
-			</div>	
+
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/photo11.JPG"/>
+			<p class="caption">Hatyai, November 2017</p>
+		</li>
+	</ul>
+
+
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/photo09.JPG"/>
+			<p class="caption">Nara Park, October 2017</p>
+		</li>
+	</ul>
+
+
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/photo10.JPG"/>
+			<p class="caption">Fushimi Inari, November 2017</p>
+		</li>
+	</ul>
+
+
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/photo08.JPG"/>
+			<p class="caption">Yasaka Pagoda, November 2017</p>
+		</li>
+	</ul>
+
+
+	<ul class="gallery">
+		<li class="gallery-item">
+			<img src="images/33.JPG"/>
+			<p class="caption">Gion, Kyoto, October 2017</p>
+		</li>
+	</ul>
+</div>
+	
+	
+	<!-- LIGHTBOX HERE -->
+	<div class="lightbox hidden">
+		<a href="#" class="lightbox-close">&#10060;</a>
+  	  	<a href="#" class="prev">&#10094;</a>
+		<a href="#" class="next">&#10095;</a>
+
+
+		<div class="lightbox-content">
+			<img src="images/photo07.JPG"/>
+			<p class="caption">Osaka Castle, October 2017</p>
 		</div>
 
+	</div>
+
+	</div>
+	
 
 
 
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="lightbox.js"></script>
 
-
-
-
-	<script src="./lightbox.js">
-		
-		
-
-	</script>
-
-
-
-	</body>
+</body>
 </html>
-
