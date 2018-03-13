@@ -1,34 +1,36 @@
-const closeButton = document.querySelector('.lightbox-close')
-const lightbox = document.querySelector('.lightbox')
-const galleryItems = document.querySelectorAll('.gallery-item')
-const lightboxImage = document.querySelector('.lightbox-image')
+const closeButton = document.querySelector('.lightbox-close');
 
-function showImage(event) {
-			// show lightbox
-			lightbox.classList.remove('hidden')
+const lightBox = document.querySelector('.lightbox');
 
-			// get current galleryItem
-			const elementClickedOn = event.target;
-			const galleryItemParent = elementClickedOn.parentElement;
-			
-			// replace content of lightbox-image with current image and caption
-			
-			lightboxImage.innerHTML = galleryItemParent.innerHTML;
+const galleryItems = document.querySelectorAll('.gallery-item');
 
-		}
+const prevButton = document.querySelector('.prev');
 
-function hideLightbox(event){
+const nextButton = document.querySelector('.next');
+
+const lightboxImage = document.querySelector('.lightbox-content');
+
+
+
+
+closeButton.onclick = function(event){
 	event.preventDefault();
-	lightbox.classList.add('hidden');
+	lightBox.classList.add('hidden');
 }
 
-// hide lightbox when close button is clicked
-closeButton.onclick = hideLightbox;
-}
 
-	//  for every gallery item, set onclick handler to show image
-	for( let i = 0; i < galleryItems.length; i++){
-		let item = galleryItems[i];
-		item.onclick = showImage;
-		}
+for(let i = 0; i < galleryItems.length; i++){
+	let item = galleryItems[i];
+	item.onclick = function(event){
+
+		// show lightbox
+		lightBox.classList.remove('hidden');
+
+		// get current galleryItem
+		const elementClickedOn = event.target;
+		const galleryItemParent = elementClickedOn.parentElement;
+
+		// replace lightbox image with current image
+		lightboxImage.innerHTML = galleryItemParent.innerHTML;
 	}
+}
