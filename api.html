@@ -31,6 +31,170 @@
 			max-width: 250px;
 			
 		}
+		
+		nav {
+	width: 100%;
+	height:auto;
+	padding: 35px;
+	/*border: 1px dotted red;*/
+}
+
+
+@media(max-width: 480px){
+	nav {
+		height: auto;
+	}
+}
+
+
+nav #logo {
+	/*float: left; */
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #585858;
+	transition: 0.5s;
+	text-align: left;
+	margin: 50px;
+}
+
+
+nav #logo:hover {
+	color: #33FF99;
+}
+
+
+@media(max-width: 480px) {
+	nav #logo {
+		margin: 5px 10px;
+
+	}
+}
+
+
+/*nav a {
+	float: right;
+	margin: 15px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+*/
+
+
+nav .hidden {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	z-index: 11;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 50px;
+	display: none;
+	transition: 0.5s;
+}
+
+
+.hidden a {
+	text-align: center;
+	display: block;
+	margin: 35px;
+	font-size: 25pt;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: #33FF99;
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+
+
+
+.hidden a:hover {
+	color: #FFFFFF;
+}
+
+
+.hidden .close {
+	margin: 25px 60px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+
+@media(max-width: 480px){
+	.hidden .close{
+		margin: 25px 32px;
+	}
+}
+
+
+@media(max-width: 480px){
+	nav a{
+		margin: 20px;
+		text-align: center;
+		float: none;
+		display: block;
+	}
+}
+
+
+.hidden .nav-links{
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	transform: translate(100px, -100px);
+	display: block;
+	/*border: 1px dotted white;*/
+}
+
+
+@media(max-width: 480px){
+	.hidden .nav-links{
+
+		transform: translate(150px, -125px);
+	}
+}
+
+
+@media(max-width: 768px){
+	.hidden .nav-links{
+
+		transform: translate(150px, -125px);
+	}
+}
+
+
+.menu {
+	/*border: 1px dotted grey;*/
+	vertical-align: center;
+	margin: 25px 60px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+
+@media(max-width: 480px){
+	.menu{
+		margin: 25px;
+	}
+}
+
+
+.menu .lines {
+	width: 30px;
+	height: 3px;
+	margin: 7px;
+	background-color: black;
+	transition: 0.5s;
+}
+
+
+.menu:hover .lines {
+	background-color: #33FF99;
+}
 
 	</style>
 
