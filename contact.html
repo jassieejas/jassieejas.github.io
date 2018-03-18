@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>Contact</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,800,800i|Vollkorn:400,600,400i,600i,700i" rel="stylesheet">
+
+</head>
+<body>
+	
+	<!-- NAVIGATION BAR HERE -->
+
+	<nav>
+		<a href="index.html" id="logo">JASSIE JAS</a>
+
+		<a href="#" class="menu">
+			<div class="lines"></div>
+			<div class="lines"></div>
+			<div class="lines"></div>
+		</a>
+
+		<div class="overlay hidden">
+			<a href="#" class="close">&#10060;</a>
+
+			<div class="nav-links">
+				
+				<a href="http://behance.net/j_cxh">WORKS</a>
+				<a href="lightbox.html">PHOTGRAPHY</a>
+				<a href="contact.html">CONTACT</a>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- HEADER HERE -->
+
+	<header class="location">
+			
+			<section class="address">
+
+				<h1>Contact</h1>
+
+				<h3>For questions and inquiries regarding the aforementioned services, please drop me a message and I’ll respond as soon as I can. Thank you!</h3>
+				
+				<h3>Email</h3>
+				<P>jasminexianhuan@gmail.com<br/></P>
+
+				<h3>Phone</h3>
+				<P>03-9212 8158</P>
+
+			</section>
+
+
+			<section id="map">
+				
+				<iframe width="100%" height="370" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJh819ADlJzDERuOXOhQOZCB8&key=AIzaSyDs_hmPiK6Gn2-ipoVWjFi7k9cuTCYBwo8" allowfullscreen></iframe>
+
+			</section>
+
+	</header>
+
+
+	<article>
+
+		<section class="links">
+			<h3>For more works, please follow</h3>
+			<a target="_blank"href="http://behance.net/j_cxh">Behance</a>
+			<a target="_blank"href="https://instagram.com/jassiee.jas/">Instagram</a>
+			<a target="_blank"href="https://vimeo.com/user48026803/">Vimeo</a>
+			<a target="_blank"href="https://issuu.com/jassiee.jas/">Issuu</a>
+		</section>
+		
+	</article>	
+
+	
+	<!-- FOOTER HERE -->
+
+	<footer>
+		<p> &#169; 2018 Jasmine Choong. All Rights Reserved. </p>
+	</footer>
+
+
+
+
+
+	<script>
+		const closeButton = document.querySelector('.close');
+
+		const navigationOverlay = document.querySelector('.hidden');
+
+		const navigationButton = document.querySelector('.menu');
+
+
+		closeButton.onclick = function(event){
+			event.preventDefault();
+			navigationOverlay.style.display = "none";
+		}
+
+		navigationButton.onclick = function(event){
+			navigationOverlay.style.display = "initial";
+		}
+	</script>
+
+
+</body>
+</html>
+
+
