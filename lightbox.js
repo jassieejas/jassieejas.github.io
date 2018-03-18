@@ -10,6 +10,21 @@ const nextButton = document.querySelector('.next');
 
 const lightboxImage = document.querySelector('.lightbox-content');
 
+const closeeButton = document.querySelector('.close');
+
+const navigationOverlay = document.querySelector('.hidden');
+
+const navigationButton = document.querySelector('.menu');
+
+
+closeeButton.onclick = function(event){
+	event.preventDefault();
+	navigationOverlay.style.display = "none";
+}
+
+navigationButton.onclick = function(event){
+	navigationOverlay.style.display = "initial";
+}
 
 
 
