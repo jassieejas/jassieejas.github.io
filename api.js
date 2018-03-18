@@ -128,5 +128,16 @@ gameSequence();
 
 
 
+		const closeButton = document.querySelector('.close');
+		const navigationOverlay = document.querySelector('.hidden');
+		const navigationButton = document.querySelector('.menu');
 
+		closeButton.onclick = function(event){
+			event.preventDefault();
+			navigationOverlay.style.display = "none";
+		}
+		
+		navigationButton.onclick = function(event){
+			navigationOverlay.style.display = "initial";
+		}
 
